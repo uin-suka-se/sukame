@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.sukase.core";
+option java_multiple_files = true;
+
+message UserPreferences {
+  string uid = 1;
+  string username = 2;
+  string full_name = 3;
+  string token = 4;
+}
