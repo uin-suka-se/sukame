@@ -1,0 +1,3 @@
+[submodule "sukame-be-module"]
+	path = sukame-be-module
+	url = https://github.com/Modul-Chat/Back-End.git
