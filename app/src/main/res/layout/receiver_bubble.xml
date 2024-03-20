@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receiver_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:elevation="@dimen/elevation_4"
+    android:orientation="horizontal">
+
+    <!-- Foto Profil -->
+    <ImageView
+        android:id="@+id/receiverProfileImage"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/elevation_4"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/profile_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person" />
+
+    <!-- Bubble Chat -->
+    <LinearLayout
+        android:id="@+id/receiverBubbleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/receiver_bubble_background"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/receiverMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received_message"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/receiverChatTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/elevation_6"
+            android:text="@string/times1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
+

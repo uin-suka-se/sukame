@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sender_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:elevation="@dimen/elevation_4"
+    android:orientation="horizontal">
+
+    <!-- Grup untuk Bubble Chat -->
+    <LinearLayout
+        android:id="@+id/senderBubbleGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/sender_bubble_background"
+        android:orientation="vertical"
+        android:padding="@dimen/elevation_10">
+
+        <!-- Bubble Chat -->
+        <TextView
+            android:id="@+id/senderMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sent_message"
+            android:textColor="?attr/colorOnBackground"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/senderChatTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/elevation_6"
+            android:text="@string/times2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Foto Profil -->
+    <ImageView
+        android:id="@+id/senderProfileImage"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/elevation_4"
+        android:contentDescription="@string/profile_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person" />
+</LinearLayout>
